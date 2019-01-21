@@ -1,0 +1,3 @@
+<p>Hello, what's your name ?</p>
+<input type="text" placeholder="name" [value]="userService.getUsername()" #name>
+<button class="btn border" (click)="userService.setUsername(name.value)">OK</button>
